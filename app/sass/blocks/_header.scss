@@ -1,0 +1,14 @@
+.background {
+    background-image: $gr-supersoft;
+}
+
+.header {
+    &__lang {
+
+    }
+    &__button{
+        &--active {
+            background-color: $accent;
+        }
+    }
+}
