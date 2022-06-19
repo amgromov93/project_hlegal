@@ -1,0 +1,14 @@
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 129px 0 30px;
+    &__text {
+        padding-bottom: 159px;
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+}

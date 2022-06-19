@@ -1,0 +1,38 @@
+.services {
+    &__tab {
+        margin-right: -30px;
+        overflow: auto;
+        overflow: -moz-scrollbars-none;
+        -ms-overflow-style: none;
+        &::-webkit-scrollbar { 
+            width: 0; 
+        }
+        &-box {
+            display: flex;
+        }
+    }
+    &__btn {
+        white-space: nowrap;
+        font-size: 30px;
+        line-height: 37px;
+        color: #B3B3BA;
+        margin-right: 30px;
+        &--active {
+            background: $gr-redtext;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+        &-mr-o {
+            margin-right: 0;
+        }
+    }
+    &__box {
+        border-top: 4px, solid, rgba(255, 255, 255, 0.3);
+        padding: 30px 0;
+    }
+    &__title {
+
+    }
+}
