@@ -1,5 +1,27 @@
 .background {
     background-image: $gr-supersoft;
+    border-radius: 0px 0px 12px 12px;
+    position: relative;
+    &::after {
+        content: '';
+        border-radius: 0 0 12px 12px;
+        background-color: #CACADB;
+        bottom: -10px;
+        height: 10px;
+        left: 20px;
+        right: 20px;
+        position: absolute;
+    }
+    &::before {
+        content: '';
+        border-radius: 0 0 12px 12px;
+        background-color: #E7E7F2;
+        bottom: -20px;
+        height: 10px;
+        left: 40px;
+        right: 40px;
+        position: absolute;
+    }
     &__image {
         background-image: url(../img/bg-img.svg);
         background-repeat: no-repeat;
