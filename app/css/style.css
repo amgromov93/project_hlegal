@@ -1,3 +1,105 @@
+/* Slider */
+.slick-slider {
+  position: relative;
+  display: block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track,
+.slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  left: 0;
+  top: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slick-track:before, .slick-track:after {
+  content: "";
+  display: table;
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-slide {
+  float: left;
+  height: 100%;
+  min-height: 1px;
+  display: none;
+}
+
+[dir="rtl"] .slick-slide {
+  float: right;
+}
+
+.slick-slide img {
+  display: block;
+}
+
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
+
 @font-face {
   font-family: 'Montserrat';
   src: url("../fonts/montserrat-italic-webfont.woff2") format("woff2"), url("../fonts/montserrat-italic-webfont.woff") format("woff");
@@ -385,11 +487,13 @@ button {
 
 .team__box {
   padding: 50px 0;
+  margin: 0 -15px;
 }
 
 .team__item {
   background-color: #F5F5FA;
   border-radius: 12px;
+  margin: 0 15px;
 }
 
 .team__foto {
@@ -455,6 +559,216 @@ button {
   color: #B3B3BA;
   margin-top: 6px;
   margin-bottom: 0;
+}
+
+.slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.slick-dots li {
+  margin: 30px 7.5px 0;
+}
+
+.slick-dots button {
+  font-size: 0;
+  cursor: pointer;
+  border: 0;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: rgba(36, 163, 255, 0.2);
+}
+
+.slick-dots button:hover {
+  background-color: rgba(36, 163, 255, 0.6);
+}
+
+.slick-dots .slick-active button {
+  background-color: #24a3ff;
+}
+
+.partners__title {
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #323264;
+  margin-bottom: 30px;
+}
+
+.partners__item {
+  width: 100%;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.partners__item--01 {
+  background-image: url(../img/partners/hillel.png);
+  background-color: #1C4280;
+}
+
+.partners__item--02 {
+  background-image: url(../img/partners/wannabizz.png);
+  background-color: #143646;
+}
+
+.partners__item--03 {
+  background-image: url(../img/partners/tapgerine.png);
+  background-color: #F48B30;
+}
+
+.partners__item--04 {
+  background-image: url(../img/partners/3dlook.png);
+  background-color: #9E4DC3;
+}
+
+.partners__item--05 {
+  background-image: url(../img/partners/orangear.png);
+  background-color: #FD9339;
+}
+
+.partners__item--06 {
+  background-image: url(../img/partners/addteligent.png);
+  background-color: #E2E2E4;
+}
+
+.partners__item--07 {
+  background-image: url(../img/partners/ckikky.png);
+  background-color: #C71C36;
+}
+
+.partners__item--08 {
+  background-image: url(../img/partners/ecolease.png);
+  background-color: #DCF3F9;
+}
+
+.partners__item--09 {
+  background-image: url(../img/partners/infratrek.png);
+  background-color: #EAEAEA;
+}
+
+.partners__item--10 {
+  background-image: url(../img/partners/citypark.png);
+  background-color: #282240;
+}
+
+.partners__item--11 {
+  background-image: url(../img/partners/artprint.png);
+  background-color: #1D4568;
+}
+
+.partners__item--12 {
+  background-image: url(../img/partners/ultimate.png);
+  background-color: #000000;
+}
+
+.partners__item--block {
+  display: none;
+}
+
+.blog {
+  padding-top: 30px;
+  background-color: #F5F5FA;
+}
+
+.blog__border {
+  border-bottom: 2px solid #E6E6F0;
+}
+
+.blog__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.blog__link::after {
+  content: '';
+  width: 4px;
+  height: 4px;
+  border-right: 2px solid #24A3FF;
+  border-bottom: 2px solid #24A3FF;
+  margin-left: 5px;
+  -webkit-transform: rotate(315deg);
+          transform: rotate(315deg);
+}
+
+.blog__title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  background: linear-gradient(90.13deg, #F0145A 0.84%, #EF8080 99.96%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.blog__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-bottom: 30px;
+}
+
+.blog__img {
+  border-radius: 12px 12px 0 0;
+}
+
+.blog__item {
+  border-radius: 0 0 12px 12px;
+  background-color: #fff;
+  padding: 30px;
+}
+
+.blog__item-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #24A3FF;
+}
+
+.blog__date {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #B3B3BA;
+  padding-bottom: 15px;
+  border-bottom: 4px solid #E6E6F0;
+}
+
+.blog__text {
+  font-size: 14px;
+  line-height: 22px;
+  color: #000000;
 }
 
 /*# sourceMappingURL=style.css.map */
