@@ -65,6 +65,11 @@
     &__fb {
         display: none;
     }
+    &__adress {
+        font-size: 16px;
+        line-height: 20px;
+        color: #B3B3BA;
+    }
     &__logo{
         padding: 15px 0;
     }
@@ -91,5 +96,66 @@
         list-style: none;
         padding: 0;
         display: none;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .background {
+        &__image {
+            background-size: 894px 1024px;
+        }
+    }
+    .header {
+        grid-template-columns: 1fr;
+        grid-template-rows: min-content min-content min-content;
+        padding: 50px 0 5px;
+        &__adress,
+        &__fb {
+            display: block;
+            &:hover path {
+                fill: #F0145A;
+            }
+        }
+        &__strip {
+            background-color: transparent;
+            grid-column: 1 / 2;
+            grid-row: 1 / 2;
+            &-content {
+                justify-content: start;
+                align-items: center;
+            }
+            &--dot {
+                display: flex;
+                align-items: center;
+                &::after {
+                    content: '';
+                    background-color: #E6E6F0;
+                    width: 6px;
+                    height: 6px;
+                    border-radius: 50%;
+                    margin: 0 6px;
+                }
+            }
+        }
+        &__burger {
+            display: none;
+        }
+        &__menu {
+            justify-content: flex-start;
+        }
+        &__list {
+            display: flex;
+        }
+        &__category {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 20px;
+            text-align: right;
+            color: #FFFFFF;
+            margin-right: 15px;
+            &:hover {
+                color: #F0145A;
+            }
+        }
     }
 }

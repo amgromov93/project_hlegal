@@ -194,6 +194,12 @@ button {
   border-radius: 8px;
 }
 
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 60px;
+  }
+}
+
 .background {
   background-image: linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643E72 87.46%);
   border-radius: 0px 0px 12px 12px;
@@ -278,6 +284,12 @@ button {
   display: none;
 }
 
+.header__adress {
+  font-size: 16px;
+  line-height: 20px;
+  color: #B3B3BA;
+}
+
 .header__logo {
   padding: 15px 0;
 }
@@ -314,6 +326,77 @@ button {
   list-style: none;
   padding: 0;
   display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .background__image {
+    background-size: 894px 1024px;
+  }
+  .header {
+    grid-template-columns: 1fr;
+    grid-template-rows: -webkit-min-content -webkit-min-content -webkit-min-content;
+    grid-template-rows: min-content min-content min-content;
+    padding: 50px 0 5px;
+  }
+  .header__adress, .header__fb {
+    display: block;
+  }
+  .header__adress:hover path, .header__fb:hover path {
+    fill: #F0145A;
+  }
+  .header__strip {
+    background-color: transparent;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+  .header__strip-content {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__strip--dot {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header__strip--dot::after {
+    content: '';
+    background-color: #E6E6F0;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    margin: 0 6px;
+  }
+  .header__burger {
+    display: none;
+  }
+  .header__menu {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .header__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header__category {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    color: #FFFFFF;
+    margin-right: 15px;
+  }
+  .header__category:hover {
+    color: #F0145A;
+  }
 }
 
 .title {
