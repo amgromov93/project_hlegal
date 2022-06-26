@@ -12,3 +12,12 @@
         color: #FFFFFF;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .title {
+        padding: 180px 0 30px;
+        &__text {
+            padding-bottom: 400px;
+        }
+    }
+}

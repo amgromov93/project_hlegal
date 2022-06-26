@@ -87,3 +87,12 @@
         background-color: rgba(36, 163, 255, 1);
     }
 }
+
+@media screen and (min-width: 768px) {
+    .team {
+        &__text {
+            font-size: 38px;
+            line-height: 46px;
+        }
+    }
+}
