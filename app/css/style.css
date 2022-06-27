@@ -985,6 +985,10 @@ button {
   text-transform: uppercase;
 }
 
+.footer__map:hover {
+  color: #F0145A;
+}
+
 .footer__contact {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -996,6 +1000,10 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.footer__fb-link:hover path {
+  fill: #F0145A;
 }
 
 .footer__phone {
@@ -1011,6 +1019,10 @@ button {
   font-weight: 700;
   font-size: 16px;
   line-height: 20px;
+}
+
+.footer__mail:hover {
+  color: #F0145A;
 }
 
 .footer__rights {
