@@ -3,8 +3,8 @@ $('.js-slider').slick({
     dots: true,
     infinite: false,
     speed: 200,
-    slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToShow: 1,
+    slidesToScroll: 1,
     autoplay: false,
     autoplaySpeed: 2000,
     responsive: [

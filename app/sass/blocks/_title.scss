@@ -21,3 +21,12 @@
         }
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .title {
+        padding: 180px 0 30px;
+        &__text {
+            padding-bottom: 260px;
+        }
+    }
+}

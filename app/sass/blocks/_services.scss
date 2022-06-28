@@ -63,3 +63,41 @@
         }
     }
 }
+
+@media screen and (min-width: 1024px) {
+    .services {
+        padding: 60px 0;
+        &__block {
+            display: grid;
+            grid-template-columns:  1fr 1fr;
+            column-gap: 60px;
+        }
+        &__container {
+            padding: 0;
+            border-bottom: 0;
+            border-right: 4px solid rgba(255, 255, 255, 0.3);
+        }
+        &__tab {
+            margin-right: 60px;
+            &-box {
+                height: 100%;
+                flex-direction: column;
+                align-items: flex-end;
+                justify-content: space-between;
+            }
+        }
+        &__btn {
+            margin-right: 0;
+            padding: 0;
+        }
+        &__title {
+            margin-top: 0;
+        }
+        &__text {
+            margin-bottom: 0;
+        }
+        &__box {
+            padding: 0;
+        }
+    }
+}
