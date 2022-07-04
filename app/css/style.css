@@ -143,7 +143,7 @@
 }
 
 .container {
-  max-width: 1320px;
+  max-width: 1440px;
   min-width: 375px;
   margin: 0 auto;
   padding: 0 30px;
@@ -578,7 +578,7 @@ button {
   }
   .services__btn {
     margin-right: 0;
-    padding: 0;
+    padding: 15px 0;
   }
   .services__title {
     margin-top: 0;
@@ -587,7 +587,13 @@ button {
     margin-bottom: 0;
   }
   .services__box {
-    padding: 0;
+    padding: auto 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .services {
+    padding: 60px 120px;
   }
 }
 
