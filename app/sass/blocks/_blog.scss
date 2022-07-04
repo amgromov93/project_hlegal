@@ -90,9 +90,29 @@
             flex-direction: column;
             height: 100%;
         }
+        &__title {
+            font-size: 38px;
+            line-height: 46px;
+            margin-top: 10px;
+        }
     }
 }
 
 @media screen and (min-width: 1024px) {
-    
+    .blog {
+        &__container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: min-content min-content;
+            column-gap: 30px;
+        }
+        &__top {
+            grid-column: 1 / -1;
+        }
+        &__box {
+            &--wide {
+                grid-column: 3 / 4;
+            }
+        }
+    }
 }
