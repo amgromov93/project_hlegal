@@ -1,0 +1,17 @@
+.about {
+    &__title {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        background: $gr-redtext;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-fill-color: transparent;   
+    }
+    &__text {
+        font-size: 19px;
+        line-height: 30px;
+        color: #000000;
+    }
+}
