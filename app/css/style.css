@@ -237,7 +237,8 @@ button {
 
 .header {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: -webkit-min-content 1fr;
+  grid-template-columns: min-content 1fr;
   grid-template-rows: -webkit-min-content 1fr;
   grid-template-rows: min-content 1fr;
   -webkit-box-align: center;
@@ -251,6 +252,10 @@ button {
   margin: 0 -30px;
   padding: 10px 30px;
   align-self: center;
+}
+
+.header__strip--grey {
+  background: #F5F5FA;
 }
 
 .header__strip-content {
@@ -273,11 +278,19 @@ button {
   background-color: #F0145A;
 }
 
+.header__button--light {
+  color: #B3B3BA;
+}
+
 .header__phone {
   font-size: 16px;
   line-height: 20px;
   text-align: right;
   color: #FFFFFF;
+}
+
+.header__phone--light {
+  color: #B3B3BA;
 }
 
 .header__adress, .header__fb {
@@ -292,6 +305,40 @@ button {
 
 .header__logo {
   padding: 15px 0;
+}
+
+.header__logo--light {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__logo--light-aboutus {
+  white-space: nowrap;
+  font-size: 20px;
+  line-height: 24px;
+  color: #323264;
+  text-decoration: none;
+  margin-left: 4px;
+}
+
+.header__logo--light .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo--light .logo::after {
+  content: '';
+  background-image: url(../img/slash.svg);
+  background-size: 12px 26px;
+  background-repeat: no-repeat;
+  width: 12px;
+  height: 26px;
+  margin-left: 4px;
 }
 
 .header__menu {
@@ -313,6 +360,10 @@ button {
   cursor: pointer;
   -webkit-transition-duration: 400ms;
           transition-duration: 400ms;
+}
+
+.header__burger--light {
+  background-image: url(../img/hamburger-light.svg);
 }
 
 .header__burger:hover {
