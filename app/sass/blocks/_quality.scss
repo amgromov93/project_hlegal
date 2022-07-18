@@ -18,3 +18,24 @@
         margin-bottom: 0;
     }
 }
+
+@media screen and (min-width: 768px) {
+    .quality {
+        &__title {
+            font-size: 38px;
+            line-height: 46px;
+        }
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .quality {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        grid-column-gap: 60px;
+        align-items: start;
+        &__title {
+            margin-top: 10px;
+        }
+    }
+}

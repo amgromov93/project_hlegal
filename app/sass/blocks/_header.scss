@@ -51,6 +51,7 @@
         }
     }
     &__button {
+        text-transform: uppercase;
         &:not(&--active):hover {
             background-color: rgba(255, 255, 255, 0.2);
         }
@@ -83,6 +84,7 @@
         padding: 15px 0;
         &--light {
             display: flex;
+            align-items: center;
             &-aboutus {
                 white-space: nowrap;
                 font-size: 20px;
@@ -90,6 +92,8 @@
                 color: #323264;
                 text-decoration: none;
                 margin-left: 4px;
+                margin-top: 0;
+                margin-bottom: 0;
             }
             & .logo {
                 display: flex;
@@ -152,6 +156,20 @@
                 fill: #F0145A;
             }
         }
+        &__logo--light {
+            & .logo {
+                &::after {
+                    content: '';
+                    background-size: 21px 47px;
+                    width: 21px;
+                    height: 47px;
+                }
+            }
+            &-aboutus {
+                font-size: 36px;
+                line-height: 44px;
+            }
+        }
         &__strip {
             background-color: transparent;
             grid-column: 1 / 2;
@@ -191,6 +209,9 @@
             margin-right: 15px;
             &:hover {
                 color: #F0145A;
+            }
+            &--blue {
+                color: #24A3FF;
             }
         }
     }

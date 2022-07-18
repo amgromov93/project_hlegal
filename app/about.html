@@ -21,12 +21,12 @@
                     <a class="header__phone header__phone--light header__strip--dot" href="tel:0800211927">0800 211 927</a>
                     <a class="header__fb" href="#">
                         <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z" fill="#FFFFFF"/>
+                            <path d="M24 12.5733C24 5.90541 18.6274 0.5 12 0.5C5.37258 0.5 0 5.90541 0 12.5733C0 18.5995 4.38823 23.5943 10.125 24.5V16.0633H7.07813V12.5733H10.125V9.91343C10.125 6.88755 11.9165 5.21615 14.6576 5.21615C15.9705 5.21615 17.3438 5.45195 17.3438 5.45195V8.42313H15.8306C14.3399 8.42313 13.875 9.35379 13.875 10.3086V12.5733H17.2031L16.6711 16.0633H13.875V24.5C19.6118 23.5943 24 18.5995 24 12.5733Z" fill="#B3B3BA"/>
                         </svg>                        
                     </a>
                 </div>
             </div>
-            <a class="header__logo header__logo--light" href="">
+            <a class="header__logo header__logo--light" href="./index.html">
                 <picture class="logo">
                     <source media="(min-width:768px)" srcset="./img/logo-light_tablet.svg">
                     <img src="./img/logo-light.svg" alt="#">
@@ -36,46 +36,50 @@
             <nav class="header__menu">
                 <button type="button" class="header__burger header__burger--light">btn</button>
                 <ul class="header__list">
-                    <li><a class="header__category" href="./about.html">about us</a></li>
-                    <li><a class="header__category" href="#">services</a></li>
-                    <li><a class="header__category" href="#">team</a></li>
-                    <li><a class="header__category" href="#">publications</a></li>
-                    <li><a class="header__category" href="#">contact</a></li>
+                    <li><a class="header__category header__category--blue" href="./about.html">about us</a></li>
+                    <li><a class="header__category header__category--blue" href="#">services</a></li>
+                    <li><a class="header__category header__category--blue" href="#">team</a></li>
+                    <li><a class="header__category header__category--blue" href="#">publications</a></li>
+                    <li><a class="header__category header__category--blue" href="#">contact</a></li>
                 </ul>
             </nav>
         </header>
     </div>
     <main class="mainly">
         <div class="container">
-            <section class="about">
-                <h1 class="about__title">We turn over the idea of legal services</h1>
-                <p class="about__text">Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve the adoption of a number of decisions that are important for the industry. Many people form the practice of applying the law of the sea in Ukraine.
-                    HLEGAL is a reliable business partner, confirmed by stable cooperation with international law firms, the trust of large Ukrainian and international companies, and the recognition of professional ratings.</p>
-            </section>
-            <section class="achivments">
-                <h2 class="visually-hidden"> Our achivments</h2>
-                <article class="achivments__year achivments__box">
-                    <p class="achivments__item achivments__item--01">10+</p>
-                    <p class="achivments__text">years of relevant experience</p>
-                </article>
-                <article class="achivments__clients achivments__box">
-                    <p class="achivments__item achivments__item--02">30+</p>
-                    <p class="achivments__text">active clients who entrust us with their orders on a monthly basis</p>
-                </article>
-                <article class="achivments__hours achivments__box achivments__box--pb0">
-                    <p class="achivments__item achivments__item--03">500+</p>
-                    <p class="achivments__text">hours of pro bono work annually</p>
-                </article>
-            </section>
+            <div class="about-container">
+                <section class="about">
+                    <h1 class="about__title">We turn over the idea of legal services</h1>
+                    <p class="about__text">Consolidating many years of experience and practice, the company's lawyers accompany complex projects and achieve the adoption of a number of decisions that are important for the industry. Many people form the practice of applying the law of the sea in Ukraine.</p>
+                    <p class="about__text">HLEGAL is a reliable business partner, confirmed by stable cooperation with international law firms, the trust of large Ukrainian and international companies, and the recognition of professional ratings.</p>
+                </section>
+                <section class="achivments">
+                    <h2 class="visually-hidden"> Our achivments</h2>
+                    <article class="achivments__year achivments__box">
+                        <p class="achivments__item achivments__item--01">10+</p>
+                        <p class="achivments__text">years of relevant experience</p>
+                    </article>
+                    <article class="achivments__clients achivments__box">
+                        <p class="achivments__item achivments__item--02">30+</p>
+                        <p class="achivments__text">active clients who entrust us with their orders on a monthly basis</p>
+                    </article>
+                    <article class="achivments__hours achivments__box achivments__box--pb0">
+                        <p class="achivments__item achivments__item--03">500+</p>
+                        <p class="achivments__text">hours of pro bono work annually</p>
+                    </article>
+                </section>
+            </div>
         </div>
         <div class="team__img">
             <p class="team__img__text">team</p>
         </div>
         <div class="container">
             <section class="quality">
-                <p class="quality__text">The historically unchanged legal profession has begun to reformat in recent years. Clients are feeling this, but law firms are still resisting evolution. Clients need convenience, simplicity, transparent payment. Google, IBM WatsOn, Symantec Clearwell prove that the technological revolution in legal services has begun and is imminent.</p>
-                <p class="quality__text">Quality is what we care about the most.</p>
-                <p class="quality__text">It's simple. If you are unhappy with our work, we will refund your money. We trust our clients. And we want our clients to trust us too.</p>
+                <div class="quality__box">
+                    <p class="quality__text">The historically unchanged legal profession has begun to reformat in recent years. Clients are feeling this, but law firms are still resisting evolution. Clients need convenience, simplicity, transparent payment. Google, IBM WatsOn, Symantec Clearwell prove that the technological revolution in legal services has begun and is imminent.</p>
+                    <p class="quality__text">Quality is what we care about the most.</p>
+                    <p class="quality__text">It's simple. If you are unhappy with our work, we will refund your money. We trust our clients. And we want our clients to trust us too.</p>
+                </div>
                 <h3 class="quality__title">Quality is what we care about the most.</h3>
             </section>
         </div>

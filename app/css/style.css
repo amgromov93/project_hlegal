@@ -270,6 +270,10 @@ button {
           align-items: center;
 }
 
+.header__button {
+  text-transform: uppercase;
+}
+
 .header__button:not(.header__button--active):hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
@@ -311,6 +315,9 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header__logo--light-aboutus {
@@ -320,6 +327,8 @@ button {
   color: #323264;
   text-decoration: none;
   margin-left: 4px;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .header__logo--light .logo {
@@ -395,6 +404,16 @@ button {
   .header__adress:hover path, .header__fb:hover path {
     fill: #F0145A;
   }
+  .header__logo--light .logo::after {
+    content: '';
+    background-size: 21px 47px;
+    width: 21px;
+    height: 47px;
+  }
+  .header__logo--light-aboutus {
+    font-size: 36px;
+    line-height: 44px;
+  }
   .header__strip {
     background-color: transparent;
     grid-column: 1 / 2;
@@ -447,6 +466,9 @@ button {
   }
   .header__category:hover {
     color: #F0145A;
+  }
+  .header__category--blue {
+    color: #24A3FF;
   }
 }
 
@@ -1398,12 +1420,18 @@ button {
   padding-bottom: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .achivments {
+    margin-bottom: 60px;
+  }
+}
+
 .team__img {
   background-image: url(../img/team.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  height: 114px;
+  height: 115px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1416,8 +1444,6 @@ button {
 }
 
 .team__img__text {
-  width: 148px;
-  height: 44px;
   font-weight: 700;
   font-size: 36px;
   line-height: 44px;
@@ -1427,6 +1453,37 @@ button {
   color: #FFFFFF;
   opacity: 0.8;
   text-shadow: 0px 15px 30px rgba(40, 40, 86, 0.8);
+}
+
+@media screen and (min-width: 768px) {
+  .team__img {
+    height: 220px;
+  }
+  .team__img__text {
+    font-size: 46px;
+    line-height: 56px;
+    letter-spacing: 63px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .team__img {
+    height: 312px;
+  }
+  .team__img__text {
+    font-size: 86px;
+    line-height: 105px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .team__img {
+    height: 438px;
+  }
+  .team__img__text {
+    font-size: 96px;
+    line-height: 117px;
+  }
 }
 
 .quality {
@@ -1452,6 +1509,27 @@ button {
   margin-bottom: 0;
 }
 
+@media screen and (min-width: 768px) {
+  .quality__title {
+    font-size: 38px;
+    line-height: 46px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .quality {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-column-gap: 60px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
+  .quality__title {
+    margin-top: 10px;
+  }
+}
+
 .achievements-slider {
   background-color: #F5F5FA;
   padding-top: 30px;
@@ -1463,6 +1541,7 @@ button {
 }
 
 .achievements-slider__title {
+  margin: 0 0 30px;
   font-weight: 700;
   font-size: 14px;
   line-height: 17px;
@@ -1514,6 +1593,27 @@ button {
   background-image: url(../img/achievements-slider/item-06.png);
   background-repeat: no-repeat;
   background-position: center;
+}
+
+@media screen and (min-width: 768px) {
+  .achievements-slider__box {
+    margin: 0 -20px;
+  }
+  .achievements-slider__item {
+    margin: 0 20px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about-container {
+    padding-bottom: 41px;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    grid-column-gap: 30px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
